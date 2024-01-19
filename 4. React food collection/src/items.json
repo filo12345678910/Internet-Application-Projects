@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Pizza",
+      "description": "Pepperoni pizza",
+      "image": "images\\1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Pasta",
+      "description": "Pasta with spinach",
+      "image": "images\\2.webp",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Bread",
+      "description": "Just normal bread",
+      "image": "images\\3.jfif",
+      "rating": 1
+    },
+    {
+      "id": 4,
+      "name": "Soup",
+      "description": "Chicken broth",
+      "image": "images\\4.jpg",
+      "rating": 3
+    }
+  ]
