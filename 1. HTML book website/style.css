@@ -1,0 +1,39 @@
+li {
+  list-style-type: square;
+}
+#price {
+  color: red;
+  font-weight: bold;
+}
+.paragraph {
+  font-style: italic;
+}
+td img {
+  border: 30px solid blue;
+  transition: border-color 0.1s ease;
+}
+
+td:hover img {
+  border-color: red;
+}
+
+h1 + h2 {
+  letter-spacing: 5px;
+}
+
+td[colspan="2"] > p {
+  font-size: small;
+}
+
+p {
+  color: brown;
+}
+
+p + p {
+  color: gray;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/id/825778252/photo/blue-sky-and-white-clouds-background.jpg?s=612x612&w=0&k=20&c=u1jkNZutv8H344KPxrgtfIHOMuWdU4H8PQ7_rvSI-wI=);
+  background-repeat: repeat-y;
+}

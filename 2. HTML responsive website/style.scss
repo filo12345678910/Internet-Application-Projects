@@ -1,0 +1,200 @@
+$blue: #69d2e7;
+$orange: #f38630;
+$pink: #e9aeaf;
+$bg_color: #e0e4cc;
+$font_size: 16px;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+p {
+  font-size: $font_size;
+}
+
+h1 {
+  font-size: $font_size;
+  p {
+    font-size: calc(#{$font_size} + 100%);
+  }
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    .logo_png {
+      width: 100px;
+      height: auto;
+    }
+  }
+  .sidebar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    p {
+      margin: 20px;
+    }
+  }
+}
+
+.aaa {
+  display: none;
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-around;
+  h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    span {
+      display: inline;
+      border-bottom: 2.5px solid black;
+      border-left: 2.5px solid black;
+    }
+  }
+}
+
+.block_1 {
+  border: 2.5px solid black;
+  margin: 20px;
+  background-color: $bg_color;
+  h2 {
+    span {
+      display: inline;
+      background-color: $blue;
+      padding: 10px;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+}
+.block_2 {
+  border: 2.5px solid black;
+  margin: 20px;
+  background-color: $bg_color;
+  h2 {
+    span {
+      display: inline;
+      background-color: $orange;
+      padding: 10px;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+}
+.block_3 {
+  border: 2.5px solid black;
+  margin: 20px;
+  background-color: $bg_color;
+  h2 {
+    span {
+      display: inline;
+      background-color: $pink;
+      padding: 10px;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+}
+
+.footer {
+  position: relative;
+  justify-content: center;
+  background-color: $bg_color;
+  padding: 10px;
+  padding: 10px;
+  border: 2.5px solid black;
+  p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .sidebar {
+    display: none !important;
+  }
+  .aaa {
+    height: 40px;
+    font-size: 400%;
+    display: block;
+    margin: 20px;
+    border: 2.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $bg_color;
+    p {
+      margin: 0;
+      text-align: start;
+      justify-content: flex-end;
+      font-size: 30px;
+    }
+  }
+  .block_1 {
+    grid-area: lorem;
+  }
+  .block_2 {
+    grid-area: ipsum;
+  }
+  .block_3 {
+    grid-area: dolor;
+  }
+  .blocks {
+    display: grid;
+    grid-template-areas:
+      "lorem lorem"
+      "ipsum dolor";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none !important;
+  }
+  .logo {
+    p {
+      display: none;
+    }
+  }
+  .aaa {
+    height: 40px;
+    font-size: 400%;
+    display: block;
+    margin: 20px;
+    border: 2.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $bg_color;
+    p {
+      margin: 0;
+      text-align: start;
+      justify-content: flex-end;
+      font-size: 30px;
+    }
+  }
+  .blocks {
+    display: flex;
+    flex-direction: column;
+  }
+}
